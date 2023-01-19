@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clayton's Website</title>
+    <script
+      src="https://kit.fontawesome.com/b52c991879.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <a href="./"><img class="logo" src="images/smiths.png" alt="logo" /></a>
+
+       <div class="nav-center">
+    <a style="text-decoration:none" href="./motherboard.html">MOTHERBOARDS</a>
+    <a style="text-decoration:none" href="./cpu">CPU'S</a>
+    <a style="text-decoration:none" href="./ram">RAM</a>
+    <a style="text-decoration:none" href="./coolers">CPU-COOLERS</a>
+    <a style="text-decoration:none" href="./storage">STORAGE</a>
+    <a style="text-decoration:none" href="./powersupplies">POWER-SUPPLIES</a>
+    <a style="text-decoration:none" href="./cases">CASES</a>
+    <a style="text-decoration:none" href="./accessories">ACCESSORIES</a>
+  </div>
+
+      <ul>
+        <li>
+          <a href="./user.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <p><i class="fa-solid fa-magnifying-glass"></i></p>
+        </li>
+        <li>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <li>
+          <a onclick="openNav()" style="cursor: pointer"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mySidenav" class="sidenav" style="width: 0">
+      <p class="closebtn" onclick="closeNav()">&times;</p>
+    </div>
+      <div id="mySidenav" class="sidenav" style="width: 0;">
+        <p class="closebtn" onclick="closeNav()">&times;</p>
+        <a href="./">Home</a>
+        <a href="./products.html">All Products</a>
+        <a href="./"></a>
+      </div>
+
+    <div class="container">
+      <h1>Login</h1>
+      <p>Please enter your E-mail and password:</p>
+      <form action="post" class="login">
+      <div>
+        <input type="email" class="Form__Input" name="email" id="email" placeholder="E-mail"/>
+        <input type="password" class="Form__Input" name="password" id="password" required placeholder="Password"/>
+        <button class="button" type="submit">login</button>
+      </div>
+      </form>
+    <div class="Text--subdued">Don't have an account?
+      <a href="./register.html">Create one</a></div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+        

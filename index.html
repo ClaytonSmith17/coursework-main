@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smiths | Best Electronics Retailer</title>
+    <script
+      src="https://kit.fontawesome.com/b52c991879.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    
+    <!-- Navbar -->
+    <nav class="nav">
+      <a href="./"><img class="logo" src="images/smiths.png" alt="logo" /></a>
+
+  <div class="nav-center">
+    <a style="text-decoration:none" href="./motherboard.html">MOTHERBOARDS</a>
+    <a style="text-decoration:none" href="./cpu">CPU'S</a>
+    <a style="text-decoration:none" href="./ram">RAM</a>
+    <a style="text-decoration:none" href="./coolers">CPU-COOLERS</a>
+    <a style="text-decoration:none" href="./storage">STORAGE</a>
+    <a style="text-decoration:none" href="./powersupplies">POWER-SUPPLIES</a>
+    <a style="text-decoration:none" href="./cases">CASES</a>
+    <a style="text-decoration:none" href="./accessories">ACCESSORIES</a>
+  </div>
+      <ul>
+        <li>
+          <a href="./user.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+        <li>
+          <p><i class="fa-solid fa-magnifying-glass"></i></p>
+        </li>
+        <li>
+          <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+        </li>
+        <li>
+          <a onclick="openNav()" style="cursor: pointer"
+            ><i class="fa-solid fa-bars"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <div id="mySidenav" class="sidenav" style="width: 0">
+      <p class="closebtn" onclick="closeNav()">&times;</p>
+    </div>
+
+    <!-- Banner -->
+
+    <header class="header">
+      <img src="./images/banner2.png" alt="banner-image" />
+      <div class="banner-content">
+        <h1>Smiths</h1>
+        <p>Best Electronics Retailer</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </header>
+    <section>
+      <div class="title">
+        <h1>Featured Products</h1>
+      </div>
+
+      <!-- Featured Products -->
+    <div class="product-center">
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/computer2.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shoppingfa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"> <h2>Creator PC</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price">£1499.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/computer3.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Creator Plus PC</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£1749.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/computer4.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Creator Pro PC</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£1999.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/computer.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Streaming Pro PC</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <h4 class="price">£2499.99</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+    <div class="title">
+      <h1>Popular Products</h1>
+    </div>
+
+    <!-- Popular Products -->
+    <div class="product-center">
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/CPUs/i7-11700k.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"> <h2>Intel I7-11700k</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£259.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/RAM/VENGEANCE RGB PRO SL.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>VENGEANCE RGB PRO SL</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price">£74.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/5000x.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>5000X RGB QL Edition</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£289.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img
+            src="./images/motherboards/NZXT N7-Z69XT-B1 ATX LGA1700 Motherboard.png"
+            alt=""
+          />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>N7-Z69XT-B1</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <h4 class="price">£229.99</h4>
+        </div>
+      </div>
+    </div>
+    <div class="product-center">
+      <div class="product">
+        <div class="product-header">
+          <img src="../images/pro type.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"> <h2>Pro Type Ultra</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£129.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/Cooling/Corsair-AIO.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>H100i ELITE CAPELLIX</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price">£169.99</h4>
+        </div>
+      </div>
+
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/CPUs/i9-12900k.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Intel I9-12900k</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <h4 class="price">£499.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/3090 VISION OC.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Gigabyte 3090 Vision OC</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <h4 class="price">£1499.99</h4>
+        </div>
+      </div>
+    </div>
+    <div class="product-center">
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/filler.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shoppingfa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"> <h2>Placeholder</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price">Placeholder</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/filler.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Placeholder</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price">Placeholder</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/filler.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Placeholder</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bx-star"></i>
+          </div>
+          <h4 class="price">Placeholder</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/filler.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="fa-solid fa-cart-shopping"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Placeholder</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <h4 class="price">Placeholder</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+    <div class="title">
+      <h1>New Releases</h1>
+    </div>
+
+    <!-- New Products -->
+    <div class="product-center">
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/CPUs/i9-13900k.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"> <h2>Intel I9-13900k</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£599.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/4090.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Asus GeForce RTX 4090</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+          </div>
+          <h4 class="price">£1799.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img src="./images/7000d.png" alt="" />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Corsair 7000D Airflow</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£299.99</h4>
+        </div>
+      </div>
+      <div class="product">
+        <div class="product-header">
+          <img
+            src="./images/cooling/Kraken.png"
+            alt=""
+          />
+          <ul class="icons">
+            <span><i class="bx bx-heart"></i></span>
+            <span><i class="bx bx-shopping-bag"></i></span>
+            <span><i class="bx bx-search"></i></span>
+          </ul>
+        </div>
+        <div class="product-footer">
+          <a href="#"><h2>Kraken Z73</h2></a>
+          <div class="rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+          </div>
+          <h4 class="price">£284.99</h4>
+        </div>
+      </div>
+    </div>
+    
+
+    <script src="./script.js"></script>
+  </body>
+</html>
