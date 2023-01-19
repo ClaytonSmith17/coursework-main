@@ -17,17 +17,18 @@
   width: 72px;
 }
 
-@media screen and (max-width:480px) {
-  .nav-centre { display:none }
+@media screen and (max-width:1555px) {
+  .nav-center { display:none }
 }
 
 .nav-center {
+  font-size: x-small;
   font-style: bold;
   word-spacing: 50px;
   top: 0px;
   color: black;
   width: auto;
-  margin-left: 105px;
+  margin-left: 100px;
   box-sizing: border-box;
 }
 
