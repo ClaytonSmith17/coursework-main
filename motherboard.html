@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smiths | Best Electronics Retailer</title>
+    <script
+      src="https://kit.fontawesome.com/b52c991879.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" type="text/css" href="sidenav-cart/css/sidebar-cart.css">
+	<script src="https://kit.fontawesome.com/5536f87dc7.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,800&display=swap" rel="stylesheet">
+	<script src="sidenav-cart/js/slider-functions.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="nav">
+      <a href="./index.html" style="text-decoration: none;"><p class="logo">SMITHS</p></a>
+      <div class="nav-center">
+        <a href="./motherboard.html">MOTHERBOARDS</a>
+        <a href="./cpu.html">CPU'S</a>
+        <a href="./ram.html">RAM</a>
+        <a href="./coolers.html">CPU-COOLERS</a>
+        <a href="./storage.html">STORAGE</a>
+        <a href="./powersupplies.html">POWER-SUPPLIES</a>
+        <a href="./GPU.html">GPU'S</a>
+        <a href="./cases.html">CASES</a>
+        <a href="./accessories.html">ACCESSORIES</a> 
+      </div>
+      <ul>
+        <li>
+          <a href="./user.html"><i class="fa-solid fa-user"></i></a>
+        </li>
+          <li id="search-icon"><i class="fa fa-solid fa-magnifying-glass"></i></li>
+          <li id="search-box"><input type="text" placeholder="Search Smiths..."></li>
+          <li>
+            <a onclick="opencart()" style="cursor: pointer"
+            ><i class="fa-solid fa-cart-shopping"></i></a>
+            
+            <!-- <a href="./cart.html"><i class="fa-solid fa-cart-shopping"></i></a> -->
+            <div id="sidecart" class="sidenav" style="width: 0">
+              <!-- This is the close button for the side navigation bar -->
+              <p class="closebtn" onclick="closecart()">&times;</p>
+              <h2 class="title">THE CART</h2>
+              <div class="right-sidebar">
+                <div class="cart-item">
+                        <div class="items">
+                            <div class="item-image">
+                                <img src="./images/5000x.png" alt="com">
+                            </div>
+        
+                            <div class="item-description">
+                                <div class="item-description-title">
+                                    <h1>Corsiar 5000x RGB QL Edition</h1>
+                                </div>
+                                <div class="item-description-price">
+                                    <h2>£289.99</h2>
+                                </div>
+                                <div class="item-description-quantity">
+                                    <span class="minus"><i class="fas fa-minus fa-2x"></i></span>
+                                    <input class="input-item-quantity" type="number" value="1" ></input>
+                                    <span class="add"><i class="fas fa-plus fa-2x"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+                <div class="cart-item">
+                  <div class="items">
+                      <div class="item-image">
+                          <img src="./images/CPUs/i9-13900k.png" alt="i9-13900k">
+                      </div>
+  
+                      <div class="item-description">
+                          <div class="item-description-title">
+                              <h1>Intel Core I9-13900K</h1>
+                          </div>
+                          <div class="item-description-price">
+                              <h2>£589.00</h2>
+                          </div>
+                          <div class="item-description-quantity">
+                              <span class="minus"><i class="fas fa-minus fa-2x"></i></span>
+                              <input class="input-item-quantity" type="number" value="1" ></input>
+                              <span class="add"><i class="fas fa-plus fa-2x"></i></span>
+                          </div>
+                      </div>
+                  </div>
+          </div>
+          <div class="cart-item">
+            <div class="items">
+                <div class="item-image">
+                    <img src="./images/motherboards/NZXT N7 Z490 ATX LGA1200 Motherboard.png" alt="motherboard">
+                </div>
+
+                <div class="item-description">
+                    <div class="item-description-title">
+                        <h1>NZXT N7 Z490</h1>
+                    </div>
+                    <div class="item-description-price">
+                        <h2>£249.99</h2>
+                    </div>
+                    <div class="item-description-quantity">
+                        <span class="minus"><i class="fas fa-minus fa-2x"></i></span>
+                        <input class="input-item-quantity" type="number" value="1" ></input>
+                        <span class="add"><i class="fas fa-plus fa-2x"></i></span>
+                    </div>
+                </div>
+            </div>
+    </div>
+    <div class="cart-item">
+      <div class="items">
+          <div class="item-image">
+              <img src="./images/accessories/monitor3.png" alt="monitor">
+          </div>
+
+          <div class="item-description">
+              <div class="item-description-title">
+                  <h1>Gigabyte M28U</h1>
+              </div>
+              <div class="item-description-price">
+                  <h2>£549.99</h2>
+              </div>
+              <div class="item-description-quantity">
+                  <span class="minus"><i class="fas fa-minus fa-2x"></i></span>
+                  <input class="input-item-quantity" type="number" value="1" ></input>
+                  <span class="add"><i class="fas fa-plus fa-2x"></i></span>
+              </div>
+          </div>
+      </div>
+</div>
+                <div class="cart-subtotal">
+                    <h2>SUBTOTAL: £1678.97</h2>
+                </div>
+                  <div class="cart-notes">
+                      <textarea rows="3" placeholder="Order notes."></textarea>
+                  </div>
+        
+                  <div class="cart-option">
+                      <button id="edit-cart">Edit Cart</button>
+                      <button id="checkout">Checkout</button>
+                  </div>
+              </div>
+              <div class="overlay"></div>
+          </div>
+          </li>
+        <li>
+      <!-- This icon represents the hamburger menu icon which, when clicked, opens the side navigation bar -->
+      <a onclick="openNav()" style="cursor: pointer"
+        ><i class="fa-solid fa-bars"></i
+      ></a>
+    </li>
+  </ul>
+</nav>
+
+
+<!-- This is the side navigation bar that appears when the hamburger menu icon is clicked -->
+<div id="mySidenav" class="sidenav" style="width: 0">
+  <!-- This is the close button for the side navigation bar -->
+  <p class="closebtn" onclick="closeNav()">&times;</p>
+  <div class="sidenav-links">
+    <a href="./index.html"style="text-decoration: none;">HOME</a>
+    <a href="./motherboard.html"style="text-decoration: none;">MOTHERBOARDS</a>
+    <a href="./cpu.html"style="text-decoration: none;">CPU'S</a>
+    <a href="./ram.html"style="text-decoration: none;">RAM</a>
+    <a href="./coolers.html"style="text-decoration: none;">CPU-COOLERS</a>
+    <a href="./storage.html"style="text-decoration: none;">STORAGE</a>
+    <a href="./powersupplies.html"style="text-decoration: none;">POWER-SUPPLIES</a>
+    <a href="./GPU.html"style="text-decoration: none;">GPU'S</a>
+    <a href="./cases.html"style="text-decoration: none;">CASES</a>
+    <a href="./accessories.html"style="text-decoration: none;">ACCESSORIES</a>
+    <div class="side-text-below">
+    <a href="./about" style="text-decoration: none;">ABOUT</a>
+    <a href="./help.html" style="text-decoration: none;">HELP</a>
+    <a href="./contact" style="text-decoration: none;">CONTACT</a>
+  </div>
+ </div>
+   <!-- This div contains the toggle switch. -->
+  <div class="toggle-container">
+      <!-- This is the input element that creates the checkbox for the toggle switch. -->
+    <input type="checkbox" id="toggle-mode">
+      <!-- This label is associated with the input element above, and clicking on it will toggle the switch. -->
+    <label for="toggle-mode">
+      <!-- This span element contains the text for the toggle switch. -->
+      <span class="toggle-text">
+         <!-- This i element contains an icon for the sun -->
+        <i class="fas fa-sun"></i>
+        <!-- This i element contains an icon for the moon. -->
+        <i class="fas fa-moon"></i>
+      </span>
+    </label>
+  </div>
+</div>
+</nav>
+
+    <!-- Banner -->
+
+    <header class="header">
+      <img src="./images/banner-motherboards.png" alt="banner-image" />
+      <div class="banner-content">
+        <h1>Motherboards</h1>
+        <p>Best Electronics Retailer</p>
+        <a href="#" class="btn">Shop Now</a>
+      </div>
+    </header>
+    <section>
+
+      <div class="title">
+        <h1>NZXT</h1>
+      </div>
+
+      <!-- Featured Products -->
+      <div class="product-center">
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/motherboards/NZXT N7-Z69XT-B1 ATX LGA1700 Motherboard.png" alt="" />
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span><i class="bx bx-search"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"> <h2>NZXT N7-Z69XT-B1</h2></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">£299.99</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/motherboards/NZXT N7-Z69XT-B1 ATX LGA1700 Motherboard.png" alt="" />
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span><i class="bx bx-search"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h2>NZXT N7 Z790</h2></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">£299.99</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/motherboards/NZXT N7 Z490 ATX LGA1200 Motherboard.png" alt="" />
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span><i class="bx bx-search"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h2>Creator Pro PC</h2></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bx-star"></i>
+            </div>
+            <h4 class="price">£249.99</h4>
+          </div>
+        </div>
+        <div class="product">
+          <div class="product-header">
+            <img src="./images/motherboards/NZXT N7 Z490 ATX LGA1200 Motherboard.png" alt="" />
+            <ul class="icons">
+              <span><i class="bx bx-heart"></i></span>
+              <span><i class="bx bx-shopping-bag"></i></span>
+              <span><i class="bx bx-search"></i></span>
+            </ul>
+          </div>
+          <div class="product-footer">
+            <a href="#"><h2>NZXT N7 Z370</h2></a>
+            <div class="rating">
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+              <i class="bx bxs-star"></i>
+            </div>
+            <h4 class="price">£199.99</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  <div class="title">
+    <h1>ASUS</h1>
+  </div>
+
+  <div class="product-center">
+    <div class="product">
+      <div class="product-header">
+        <img src="./images/motherboards/asus.png" alt="" />
+        <ul class="icons">
+          <span><i class="bx bx-heart"></i></span>
+          <span><i class="bx bx-shopping-bag"></i></span>
+          <span><i class="bx bx-search"></i></span>
+        </ul>
+      </div>
+      <div class="product-footer">
+        <a href="#"> <h2>Asus ROG STRIX Z690-A</h2></a>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <h4 class="price">£279.99</h4>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-header">
+        <img src="./images/motherboards/asus2.png" alt="" />
+        <ul class="icons">
+          <span><i class="bx bx-heart"></i></span>
+          <span><i class="bx bx-shopping-bag"></i></span>
+          <span><i class="bx bx-search"></i></span>
+        </ul>
+      </div>
+      <div class="product-footer">
+        <a href="#"><h2>Asus ROG STRIX Z790-E</h2></a>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <h4 class="price">£529.99</h4>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-header">
+        <img src="./images/motherboards/asus3.png" alt="" />
+        <ul class="icons">
+          <span><i class="bx bx-heart"></i></span>
+          <span><i class="bx bx-shopping-bag"></i></span>
+          <span><i class="bx bx-search"></i></span>
+        </ul>
+      </div>
+      <div class="product-footer">
+        <a href="#"><h3>Asus TUF Gaming Z590-PLUS</h3></a>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bx-star"></i>
+        </div>
+        <h4 class="price">£236.99</h4>
+      </div>
+    </div>
+    <div class="product">
+      <div class="product-header">
+        <img src="./images/motherboards/asus4.png" alt="" />
+        <ul class="icons">
+          <span><i class="bx bx-heart"></i></span>
+          <span><i class="bx bx-shopping-bag"></i></span>
+          <span><i class="bx bx-search"></i></span>
+        </ul>
+      </div>
+      <div class="product-footer">
+        <a href="#"><h3>Asus ROG STRIX Z590-E</h3></a>
+        <div class="rating">
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+          <i class="bx bxs-star"></i>
+        </div>
+        <h4 class="price">£329.99</h4>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="product-center">
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/ASUS-ITX.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"> <h3>B760-I GAMING Mini ITX</h3></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bx-star"></i>
+      </div>
+      <h4 class="price">£233.99</h4>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/ASUS-ITX2.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"><h2>B660-I Mini ITX</h2></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bx-star"></i>
+      </div>
+      <h4 class="price">£233.99</h4>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/ASUS-ITX3.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"><h3>Asus TUF Gaming Z590-PLUS</h3></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bx-star"></i>
+      </div>
+      <h4 class="price">£236.99</h4>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/ASUS-ITX4.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"><h3>B560-I Mini ITX</h3></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+      </div>
+      <h4 class="price">£431.29</h4>
+    </div>
+  </div>
+</div>
+</section>
+
+<div class="title">
+  <h1>GIGABYTE</h1>
+</div>
+
+<div class="product-center">
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/Gigabyte1.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"> <h3>Gigabyte Z790 AORUS MASTER</h3></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bx-star"></i>
+      </div>
+      <h4 class="price">£279.99</h4>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/Gigabyte2.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"><h2>ASRock Z790 PG</h2></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bx-star"></i>
+      </div>
+      <h4 class="price">£190.79</h4>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/gigabyte3.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"><h3>Gigabyte Z590 AORUS MASTER</h3></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bx-star"></i>
+      </div>
+      <h4 class="price">£185.99</h4>
+    </div>
+  </div>
+  <div class="product">
+    <div class="product-header">
+      <img src="./images/motherboards/gigabyte4.png" alt="" />
+      <ul class="icons">
+        <span><i class="bx bx-heart"></i></span>
+        <span><i class="bx bx-shopping-bag"></i></span>
+        <span><i class="bx bx-search"></i></span>
+      </ul>
+    </div>
+    <div class="product-footer">
+      <a href="#"><h3>Asus ROG STRIX Z590-E</h3></a>
+      <div class="rating">
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+        <i class="bx bxs-star"></i>
+      </div>
+      <h4 class="price">£329.99</h4>
+    </div>
+  </div>
+</div>
+</section>
+
+<footer>
+  <div class="container-footer">
+    <div class="row">
+      <div class="col-md-4">
+        <h3>About Us</h3>
+        <p>Our mission at Smiths is to provide computer enthusiasts 
+        and professionals with the highest quality hardware components, peripherals,
+        and accessories at affordable prices. We strive to offer a wide selection 
+        of products from industry-leading brands, as well as our own proprietary 
+        line of high-performance components. Our knowledgeable and friendly 
+        customer support team is committed to providing exceptional service and 
+        technical expertise to ensure our customers find the perfect hardware 
+        solutions for their needs. We are dedicated to empowering our customers 
+        to build and optimize their dream computer systems, and we are constantly 
+        innovating to bring new and exciting products to market. At Smiths, we are
+        passionate about technology and are committed to delivering the best 
+        hardware shopping experience possible.
+      </p>
+      </div>
+      <div class="contact">
+        <h3>Contact Us</h3>
+        <ul>
+          <li><i class="fa fa-map-marker"></i> 011 Smiths Close UK</li>
+          <li><i class="fa fa-phone"></i> +44 1101 110110</li>
+          <li><i class="fa fa-envelope"></i> SmithsUK@gmail.com</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Connect with Us</h3>
+        <ul class="social-icons">
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <hr>
+        <p>&copy; <span id="current-year"></span> SMITHS. All Rights Reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="./script.js"></script>
+</body>
+</html>
